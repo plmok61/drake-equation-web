@@ -29,6 +29,7 @@ h1, h2, h3, h4, a {
 
 .appStoreImg {
   width: 100%;
+  max-width: 1000px;
 }
 
 @keyframes App-logo-spin {
