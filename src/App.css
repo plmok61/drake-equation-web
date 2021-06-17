@@ -8,8 +8,9 @@
   height: 100%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, a {
   font-family: 'Audiowide', cursive !important;
+  color: #fff;
 }
 
 .App-logo {
@@ -22,6 +23,13 @@ h1, h2, h3 {
   padding: 20px;
 }
 
+.imgContainer {
+  width: 100%;
+}
+
+.appStoreImg {
+  width: 100%;
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(360deg); }
@@ -29,10 +37,9 @@ h1, h2, h3 {
 }
 
 .centerBody {
-  width: 50%;
   margin: 0 auto;
+  height: 100%;
 }
-
 
 /*Inputs*/
 input[type=range] {

@@ -1,12 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import Privacy from './Privacy';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
+import galaxy from './galaxy.png';
+import Privacy from './Privacy';
 import './App.css';
+import AppStorePNG from './app-store.png'
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -19,12 +21,25 @@ function App() {
         <div className="App">
           <div className="centerBody">
             <div className="App-header">
-              <img src={logo} className="App-logo" alt="logo" />
+              <img src={galaxy} className="App-logo" alt="logo" />
               <h2>Drake Equation</h2>
             </div>
             <h4>
-              Calculate the number of alien civilizations in our galaxy
+              <a href="https://apps.apple.com/us/app/drake-equation-calculator/id1360650293">
+                Download the iOS app
+              </a>
             </h4>
+            
+              <div className="imgContainer">
+                <a 
+                  href="https://apps.apple.com/us/app/drake-equation-calculator/id1360650293"
+                >
+                  <img src={AppStorePNG} alt="app store" className="appStoreImg" />
+                </a>
+              </div>
+            <div>
+              <Link to="/privacy" style={{ color: 'white' }}>Privacy Policy</Link>
+            </div>
           </div>
         </div>
       </Route>
