@@ -1,14 +1,12 @@
-html {
-  height: 100%;
-}
-
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  height: 100%;
+  font-family: 'Exo 2', sans-serif;
+  background-color: #483d8b;
+  color: white;
 }
 
-#root {
-  height: 100%;
+h1, h2, h3, h4, a {
+  font-family: 'Audiowide', cursive !important;
+  color: #fff;
 }
